@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Kuchlyan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body onload="dark_mode()">
+
+    <div id="wrapper">
+        <div id="top_left">
+            <h1 id="header">RIO KUCHLYAN</h1>
+        </div>
+        <div id="top_right">
+            <a id="sun_link" href="#!" onclick="switch_color_scheme()"> <img id="sun" src="assets/sun.max.png"> </a>
+            <a id="moon_link" href="#!" onclick="switch_color_scheme()"> <img id="moon" src="assets/moon.png"> </a>
+        </div>
+        <div id="main_text">
+            <a class="main_text_links" rel="noopener" href="#about_me"><h2 class="main_text_items">ABOUT ME</h2></a>
+            <a class="main_text_links" rel="noopener" href="#projects"><h2 class="main_text_items">PROJECTS</h2></a>
+            <a class="main_text_links" rel="noopener" href="#experience"><h2 class="main_text_items">EXPERIENCE</h2></a>
+            <a class="main_text_links" rel="noopener" href="#beyond_work"><h2 class="main_text_items">BEYOND WORK</h2></a>
+        </div>
+        <div id="footer">
+            <img id="down_arrow" src="assets/chevron.down.png">
+        </div>
+    </div>
+    
+    <!-- Seperating main screen and information after scrolling -->
+
+    <div id="information">
+        <div class="information_items" id="about_me">
+            <h2>ABOUT ME</h2>
+            <p>Hello! My name is Rio Kuchlyan and I am an aspiring developer who intends to work in the technology and banking industries. I am a student at the University of North Carolina at Chapel Hill pursuing a double major in computer science and business. Feel free to contact me through any of my socials in this page!
+                <br>
+                <br>
+                <a target="_blank" href="https://www.linkedin.com/in/riokuchlyan">
+                    <img class='logo_images' src='assets/linkedin_logo.png'>
+                </a>
+                <a target="_blank" href="mailto:rio.kuchlyan@unc.edu">
+                    <img class='logo_images' src='assets/mail_logo.png'>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/rio.kuchlyan/">
+                    <img class='logo_images' src='assets/instagram_logo.png'>
+                </a>
+                <br>
+                <br>
+                <li><a class="link" target="_blank" href="mailto:rio.kuchlyan@unc.edu">Email: rio.kuchlyan@unc.edu</a></li>
+                <br>
+                <li><a class="link" target="_blank" href="mailto:contact@riokuchlyan.com">Website Inquiries: contact@riokuchlyan.com</a></li>
+                <br>
+            </p>
+        </div>
+        
+        <div class="information_items" id="projects">
+            <h2>PROJECTS</h2>  
+            <p>Here are some of my projects:</p>
+            <br>
+
+            <div id="projects_list">
+                <li><a class="link" href="#!" onclick="stockTracker()">Stock Sentiment Analysis</a></li><br>
+                <li><a class="link" href="#!" onclick="passwordManager()">Password Manager</a></li><br>
+                <li><a class="link" href="#!" onclick="nasServer()">NAS Server</a></li><br>
+                <li><a class="link" href="#!" onclick="clipboardManager()">Clipboard Manager</a></li><br>
+                <li><a class="link" href="#!" onclick="buildingThisWebsite()">Building This Website</a></li><br>
+                <li><a class="link" href="#!" onclick="battleship()">Battleship</a></li><br>
+                <li><a class="link" href="#!" onclick="webDesign()">Web Design</a></li><br>
+                <li><a class="link" href="#!" onclick="graphicalCalculator()">Graphical Calculator</a></li><br>
+            </div>
+
+            <div class="project_item" id="stockTracker">
+                  <a>
+                    <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+                  </a>
+                <p>
+                  I am currently working on a stock tracker which takes data for a given stock and runs sentiment analysis using Polygon and X APIs to predit whether or not the stock price will go up or down. This project is currently a work in progress and the source code can be viewed in this GitHub link: 
+                  <br>
+                  <br>
+                  <a class="link" target="_blank" href="https://github.com/riokuchlyan/Stock-Analyzer">GitHub Stock Tracker</a>
+                </p>
+              </div>
+              
+              <div class="project_item" id="passwordManager">
+                <a>
+                  <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+                </a>
+                <p>
+                  <img class="project_images" src="assets/clipboard_manager.png">
+                  <br>
+                  <br>
+                  Using Tkinter and the cryptography libraries in python, I created a password manager that works fully locally. It also encrypts the data to ensure that passwords are not stored in their raw format. Feel free to download the application installer and check out my code in this github link:
+                  <br>
+                  <br>
+                  <a class="link" target="_blank" href="https://github.com/riokuchlyan/passwordManager">GitHub Password Manager</a>
+                </p>
+              </div>
+          
+              <div class="project_item" id="nasServer">
+                <a>
+                  <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+                </a>
+                <p>
+                  <img class="project_images" src="assets/nas_server.jpeg">
+                  <br>
+                  <br>
+                  For my NAS server, I wanted to create a cloud storage solution within my home so that my family would have enough storage, with the convenience of accessing it remotely. At first, I used a Raspberry Pi micro-computer to test out how the NAS server would work alongside a small SD card for storage.
+                   </p>
+              </div>
+          
+              <div class="project_item" id="clipboardManager">
+                <a>
+                  <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+                </a>
+                <p>
+                  <img class="project_images" onclick="close_window()" src="assets/clipboard_manager.png">
+                  <br>
+                  <br>
+                  I created this clipboard manager as unlike windows, MacOs does not have a dedicated clipboard manager. This program, which works on all operating systems, reads and writes to the clipboard using the subprocess library. The graphical user interface is then created using Tkinter. The textbox at the bottom lets users select what text from their clipboard history to copy. The code for this project is available on my Github page.
+                  <br>
+                  <br>
+                  <a class="link" target="_blank" href="https://github.com/riokuchlyan/clipboardManager">GitHub Clipboard Manager</a>
+                </p>
+              </div>
+          
+              <div class="project_item" id="buildingThisWebsite">
+                <a>
+                  <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+                </a>
+                <p>I had the idea to build this website as I was interested in various fields of computer science, whether it be building computers, software development, networking and more. Although these topics are all under computer science, they are vastly different and I wanted a way to represent all my interests in one common place. Through this website, I hope to inform others on the various aspects of computer science and also inspire others to build projects. Building this website was also a great learning experience, whether it be buying and managing domains, learning about DNS, and hosting the website. 
+                  <br>
+                  <br>
+                  <a class="link" target="_blank" href="https://github.com/riokuchlyan/riokuchlyan.com">GitHub riokuchlyan.com</a>
+                  </p>
+              </div>
+              
+              <div class="project_item" id="battleship">
+                <a>
+                  <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+                </a>
+                <p>Initially part of a school project, I decided to expand a simple battleship code into the full game. It is text based but provides visuals on where ships are located and more. This game was made using java and multiple methods and classes are used to create this game. To access the game, click on the Repl link below. Note: Repl is an external site to host code and the servers can be slow at times. 
+                  <br>
+                  <br>
+                  <a class="link" target="_blank" href="https://replit.com/@riokuchlyan/Battleship?v=1">ReplIt Battleship</a>
+                  </p>
+              </div>
+          
+              <div class="project_item" id="webDesign">
+                <a>
+                  <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+                </a>
+                <p>Web design is a crucial element of website building as it determines how users will interact with your website. This can be making your website more aesthetically pleasing or other aspects such as Search Engine Optimization (SEO), which will land your website higher up in search results in engines such as Google, generating more users.  My web design portfolio below is a basic website with sub websites showcasing various elements of website building.
+                  <br>
+                  <br>
+                  <a class="link" target="_blank" href="./webDesign/webDesign.html">Web Design</a>
+                  </p>
+              </div>
+          
+              <div class="project_item" id="graphicalCalculator">
+                <a>
+                  <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+                </a>
+                <p>These projects use multiple methods and classes to function such as JOptionPane, loops, static variables, and more. The house drawing uses JFrame and the java.awt library to develop shapes and a graphical interface to showcase the graphics. The graphics are not the most appealing, but it showcases how graphics can be used by coding, often thought of as command line only skills by beginners.  Note: Repl is an external site to host code and the servers can be slow at times.
+                  <br>
+                  <br>
+                  <a class="link" target="_blank" href="https://replit.com/@riokuchlyan/RioCalc?v=1">ReplIt Calculator</a>
+                </p>
+              </div>
+
+        </div>
+
+        <div class="information_items" id="experience">
+            <h2>EXPERIENCE</h2>
+            <p>Here are some of my academic experiences:</p>
+            <br>
+            <p><strong>University of North Carolina at Chapel Hill</strong></p>
+            <p>Freshman majoring in Computer Science and Business.</p>
+            <p><strong>CARVR - AR/VR Development Team</strong></p>
+            <p>Working on the development of a VR meditation app and a VR music band app.</p>
+            <p><strong>Scholars of Finance - Leadership Development Program</strong></p>
+            <p>Learning technical finance skills and leadership principles to develop strong ethical finance leaders.</p>
+            <p><strong>iOS Bootcamp - App Team Carolina</strong></p>
+            <p>Gaining hands-on experience with Swift, SwiftUI, and Xcode while building multiple mobile applications.</p>
+            <p><strong>Educational Consulting - Hillsborough Township Board of Education</strong></p>
+            <p>Represented 7,200 students and advised on funding allocations, including security improvements in schools.</p>
+        </div>
+
+        <div class="information_items" id="beyond_work">
+            <h2>BEYOND WORK</h2>
+
+            <div id="beyond_work_list">
+              <p>Here is some other information about me:</p>
+                  <li><a class="link" href="#!" onclick="visited_places()">Countries I've Visited</a></li>
+                  <br>
+                  <li><a class="link" target="_blank" href="https://www.instagram.com/rio.kuchlyan/">Instagram</a></li>
+            </div>
+        </div>
+
+        <div id="visited_places" class="center">
+          <a>
+            <img id="x" class="logo_images" onclick="close_window()" src="assets/x.square.fill.png">
+          </a>
+          <video width=100% controls>
+            <source src="assets/visited_places.mp4" type="video/mp4">
+          </video>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

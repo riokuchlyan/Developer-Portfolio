@@ -1,0 +1,145 @@
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: #1a1a1a;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+a{
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li{
+    font-weight: 100;
+}
+
+.main_text_items{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.main_text_links{
+    color: aliceblue;
+}
+
+.main_text_links{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.project_images{
+    max-width: 80%;
+}
+
+.information_items{
+    text-align: center;
+    padding: 50% 10px 50% 10px;
+    height: 100%; 
+}
+
+.logo_images{
+    max-height: 25px;
+    filter: brightness(100%);
+}
+
+.project_item{
+    max-height: 60%;
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0px;
+}
+
+#x{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#visited_places{
+    overflow-y: auto;
+    display: none;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 70%;
+    margin: 0px;
+    margin-bottom: 300px;
+    display: none;
+}
+
+#header{
+    font-weight: 100;
+}
+
+#wrapper {
+    min-height: 100%; 
+}
+
+#top_left{
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+    padding-left: 4%;
+}
+
+#top_right{
+    position: absolute;
+    top: 53px;
+    right: 5%;
+    position: fixed;
+}
+
+#house{
+    margin-right: 20px;
+}
+
+#main_text{
+    padding-top: 3%;
+    padding-left: 4%;
+}
+
+#down_arrow{
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#moon{
+    display: none;
+}
+
+#information{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
